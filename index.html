@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FizzStarLab</title>
+    <title>Fizz Star Lab</title>
     <style>
         @font-face {
             font-family: 'RetroGaming';
@@ -225,11 +225,25 @@
 
         /* Медиазапросы для мобильных устройств */
 @media (max-width: 1080px) {
+    .header {
+        padding: 16px 12px;
+    }
     .logo {
-        font-size: 2em;
+        max-width: 220px;
+        width: 55%;
+    }
+    .description {
+        padding-top: 28px;
     }
     .description h1 {
-        font-size: 2em;
+        font-size: clamp(1.9rem, 8vw, 2.3rem);
+        line-height: 1.1;
+        margin: 0 0 16px;
+        word-break: break-word;
+    }
+    .mission {
+        margin-top: 0;
+        font-size: 1.05em;
     }
     .description p {
         font-size: 0.8em;
@@ -281,7 +295,7 @@
 
     <section class="description">
 
-        <h1>Welcome to Fizz Star Lab!</h1>
+        <h1>Fizz Star Lab</h1>
         <div class="mission">
             "Want a miracle? Miracle-it!"
         </div>
